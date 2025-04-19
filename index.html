@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthMate</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1><span class="highlight">HealthMate</span></h1>
+        <p class="subtitle">AI-Powered Personal Healthcare Companion</p>
+
+        <div class="cards">
+            <div class="card" onclick="showContent('vitals')">
+                <img src="https://img.icons8.com/color/96/heart-health.png" alt="Vital Signs">
+                <p>Check Vital Signs</p>
+            </div>
+            <div class="card" onclick="showContent('trends')">
+                <img src="https://img.icons8.com/color/96/combo-chart--v1.png" alt="Health Trends">
+                <p>Monitor Health Trends</p>
+            </div>
+            <div class="card" onclick="showContent('alerts')">
+                <img src="https://img.icons8.com/color/96/medical-symbol.png" alt="Health Alerts">
+                <p>Health Alerts</p>
+            </div>
+            <div class="card" onclick="showContent('reports')">
+                <img src="https://img.icons8.com/color/96/report-card.png" alt="Report Analysis">
+                <p>Report Analysis</p>
+            </div>
+        </div>
+
+        <div id="content" class="content hidden">
+            <button class="back-btn" onclick="goBack()">← Back</button>
+            <div id="content-text"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
